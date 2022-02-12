@@ -1,6 +1,7 @@
+//Página de inicio
 import React from 'react'
-import image from '../images/persontravel.svg';
-import '../styles/Home.css';
+import image from '../images/persontravel.svg'; // importación imagen de inicio
+import '../styles/Home.css';// importacion de estilos en formato css
 const Home=()=> {
   return (
     <div className='homeContent'>

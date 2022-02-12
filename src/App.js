@@ -1,7 +1,7 @@
-import NavBar from "./components/NavBar";
-import Form from "./components/Form";
-import Home from "./components/Home";
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import NavBar from "./components/NavBar"; // barra de avegación
+import Form from "./components/Form"; // Componente para los diferentes formularios
+import Home from "./components/Home"; // COmponente de la pagina de inicio y de rutas inexistentes
+import {BrowserRouter, Routes, Route} from 'react-router-dom'; // permite utilizar SPA con sus diferentes rutas
 function App() {
   return (
     <BrowserRouter>

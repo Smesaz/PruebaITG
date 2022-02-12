@@ -1,3 +1,4 @@
+// Archivo JSON utilizado en los componentes de barra de navegación y formulario
 export const items = [
     {
         "id": 1,
