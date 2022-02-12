@@ -1,0 +1,65 @@
+@import "./variables/Variables.scss";
+
+
+.formPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.form {
+    padding-top: 30px;
+    margin: 0 auto;
+    padding: 80px;
+    max-width: 100%;
+    background-color: $greycolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    label{
+        font-family: $bodyFont;
+    }
+    input{
+        margin: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        border: none;
+        border-radius: 5px
+    }
+    button{
+      @include buttonStyle(); 
+    }
+    button:hover{
+        @include buttonStyleHover();
+    }
+    .p-alert{
+        color: $redcolor;
+        margin: 0;
+        width: 80%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .logo{
+        width: 50%;
+        margin-bottom: 12px;
+    }
+}
+.isDisabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
+@media screen and (max-width: 920px) {
+    .form{
+        font-size: 15px;
+        input{
+            font-size: 17px;
+        }
+    }
+}
+

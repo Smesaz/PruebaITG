@@ -1,0 +1,17 @@
+.homeContent{
+    margin-top: 20px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 920px) {
+    .homeContent img{
+        width: 80%;
+    }
+}

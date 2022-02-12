@@ -1,0 +1,30 @@
+//colores
+$blackColor: rgb(42, 39, 39);
+$whiteColor: rgb(243, 233, 233);
+$redcolor: rgb(214, 34, 34);
+$greencolor: rgb(32, 155, 32);
+$bluecolor: #0095eb;
+$greycolor: #E7E7E7;
+
+//Fuentes
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Tines, serif;
+
+//funciones
+@mixin buttonStyle {
+    width: 100%;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    background-color: $bluecolor;
+    border: none;
+    border-radius: 8px;
+    color: $whiteColor;
+    font-size: 25px;
+    transition: 0.5s all;
+}
+@mixin buttonStyleHover{
+    transition: 0.5s all;
+    cursor: pointer;
+    background-color: $greencolor;
+}

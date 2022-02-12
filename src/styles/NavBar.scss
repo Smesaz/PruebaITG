@@ -1,0 +1,94 @@
+@import "./variables/Variables.scss";
+
+.navbar{
+    width: 100%;
+    height: 10hv;
+    background-color: $bluecolor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.navbar a {
+    color: $whiteColor;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 10px;
+    font-family: $titleFont;
+}
+.linksContent ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+.navbar .linksContent {
+    margin-right: 20px;
+}
+.menuSideBar{
+    width: 100%;
+}
+.linksContentMobile{
+    display: none;
+    width: 48px;
+    padding: 10px 0;
+}
+.insideMenu{
+    background-color: $whiteColor;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    a{
+        display: block;
+        font-family: $bodyFont;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 20px 28px;
+        color: $blackColor;
+        text-align: right;
+        border-bottom: 1px solid $bluecolor;
+        transition: all 0.3s;
+    }
+    a:hover{
+        color: $bluecolor;
+    }
+    ul{
+        list-style-type: none;
+    }
+}
+.insideMenu--active{
+    visibility: hidden;
+    opacity: 0;
+    ul{
+        list-style-type: none;
+    }
+}
+.icon{
+    margin-left: 20px;
+    width: 60px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:920px) {
+    .linksContent ul{
+        display: none;
+    }
+    .linksContentMobile{
+        display: block ;
+        cursor: pointer;
+    }
+    .insideMenu--active{
+        visibility: visible;
+        opacity: 1;
+    }
+    .icon{
+        margin-left: 6px;
+    }
+
+}
