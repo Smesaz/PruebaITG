@@ -1,18 +1,40 @@
 # Prueba Técnica ITG
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto de prueba utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Principales requerimientos
 
-In the project directory, you can run:
+Aplcación para la reserva de viaje con aerolineas comerciales.
 
-### `npm run eject`
+### `Menú simple responsive`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Menú con un listado (<'li'></'li'>) de las aerolineas disponibles
+- Menú versión desktop de forma horizontal
+- Menú versión mobile de forma desplegable (desde un ancho de 920px)
+- La lista de items en el menú es alimentado por un JSON ubicado en el archivo (/) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Nota: Ejemplo del fromato JSON: [{"id": 1, "name":"Vivair"}, {...}]**
 
+### `Formulario`
 
+- Texto de bienvenida (para cada aerolinea seleccionada)
+- Campos de formulario:
+  > Nombre Completo
+  >
+  > Email
+  > 
+  > Teléfono Celuar
+  > 
+  > Edad en el rango (18<=edad<=100)
+  
+- Formulario controlado
+  >Botón de enviar desabilitado hasta llenar los campos requeridos
+  >
+  >Detección de errores para el campo de emmail y la edad
+ 
+ - Datos del formulario envados e imprimidos en consola
+ - Ligthbox con duración de 5 segundos para confirmar el evío exitoso de los datos 
+ - 
 ## Capturas de pantalla
 
 - Modelo PC 🖥️
