@@ -11,7 +11,7 @@ Aplcación para la reserva de viaje con aerolineas comerciales.
 - Menú con un listado (<'li'></'li'>) de las aerolineas disponibles
 - Menú versión desktop de forma horizontal
 - Menú versión mobile de forma desplegable (desde un ancho de 920px)
-- La lista de items en el menú es alimentado por un JSON ubicado en el archivo (/) 
+- La lista de items en el menú es alimentado por un JSON ubicado en el archivo https://github.com/Smesaz/PruebaITG/blob/main/src/JSON/data.js 
 
 **Nota: Ejemplo del fromato JSON: [{"id": 1, "name":"Vivair"}, {...}]**
 
